@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+	
+		<property name="connection.url">jdbc:oracle:thin:@localhost:1521:XE?createDataBaseIfNotExist=true</property>
+		<property name="hibernate.hbm2ddl.auto">create-drop</property>
+		<property name="connection.username">username</property>
+		<property name="connection.password">password</property>
+		<property name="dialect">org.hibernate.dialect.OracleDialect</property>
+		<property name="hibernate.show_sql">true</property>
+		
+		<mapping class="com.everis.nttdatacenters_hibernate_t1_imlc.Cliente"/>
+		<mapping class="com.everis.nttdatacenters_hibernate_t1_imlc.Contrato"/>
+		
+	</session-factory>
+</hibernate-configuration>
